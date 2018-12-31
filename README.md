@@ -9,6 +9,7 @@ We improve [ZacharyTaylor'work](https://github.com/ZacharyTaylor/Camera-to-Arm-C
 ### 1. Eye on Hand
 A checkerboard is mounted on the end of the end effector. The corner points of this checkerboard can be robustly detected in the image. The location of its points can also be projected into the image using
 
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large x=p_{cam} = P_{cam}T^{cam}_{base}T^{base}_{end}T^{end}_{checker}p_{checker}" style="border:none;">
 $$ p_{cam} = P_{cam}T^{cam}_{base}T^{base}_{end}T^{end}_{checker}p_{checker}$$
 
 **Where**
@@ -19,7 +20,6 @@ $ T^{end}_{checker}$ is the transformation from the robotic arms end effector to
 The specific details are shown in the documentation '**Camera to Robot Arm Calibration.pdf**'.
 
 ### 2. Eye in Hand
-
 When a checkerboard is mounted on the end of the end effector, we improve the above method. In contrast, the location of the detected points can also be projected into the image using
 
 $$ p_{cam} = P_{cam}T^{cam}_{end}T^{end}_{base}T^{base}_{checker}p_{checker}$$
