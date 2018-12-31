@@ -45,16 +45,16 @@ imageFolder = 'examples/calib1211/Images';
 %run calibration
 [TBase, InvTB, TEnd, InvTE, cameraParams, TBaseStd, TEndStd, pixelErr] = CalCamArmEIH(imageFolder, posesMat, squareSize,'maxBaseOffset',1);
 %print results
-fprintf('\nFinal camera to arm base transform is\n')
+fprintf('\nFinal arm end effector to camera transform is\n')
 disp(TBase);
 
-fprintf('\nFinal camera to arm base inverse transform is\n')
+fprintf('\nFinal camera to arm end effector transform is\n')
 disp(InvTB);
 
-fprintf('Final end effector to checkerboard transform is\n')
+fprintf('Final checkerboard to arm base transform is\n')
 disp(TEnd);
 
-fprintf('Final end effector to checkerboard inverse transform is\n')
+fprintf('Final arm base to checkerboard transform is\n')
 disp(InvTE);
 
 fprintf('Final camera matrix is\n')
