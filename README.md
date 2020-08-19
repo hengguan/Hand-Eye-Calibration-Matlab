@@ -13,7 +13,7 @@ A checkerboard is mounted on the end of the end effector. The corner points of t
 
 **Where**  
 ![1](http://latex.codecogs.com/svg.latex?p_{checker}) is a corner point on the checkerboard.  
-![12](http://latex.codecogs.com/svg.latex?T^{base}_{end}) is the transformation from the robotic arms base to its end effector.  
+![2](http://latex.codecogs.com/svg.latex?T^{base}_{end}) is the transformation from the robotic arms base to its end effector.  
 ![3](http://latex.codecogs.com/svg.latex?T^{cam}_{base}) is the transformation from the camera to the robotic arms base, which is the goal we want.  
 ![4](http://latex.codecogs.com/svg.latex?T^{end}_{checker}) is the transformation from the robotic arms end effector to the checkerboard.
 
@@ -25,7 +25,7 @@ When a checkerboard is mounted on the end of the end effector, we improve the ab
 <img src="http://chart.googleapis.com/chart?cht=tx&chl =p_{cam} = P_{cam}T^{cam}_{end}T^{end}_{base}T^{base}_{checker}p_{checker}" style="border:none;">
 
 **Where**  
-![5](http://latex.codecogs.com/svg.latex?T^{end}_{base}) is the inverse matrix of ![18](http://latex.codecogs.com/svg.latex?T^{base}_{end}) which is record into a file, such as files of the folder '**cal1117**' in folder '**examples**'.  
+![5](http://latex.codecogs.com/svg.latex?T^{end}_{base}) is the inverse matrix of ![8](http://latex.codecogs.com/svg.latex?T^{base}_{end})which is record into a file, such as files of the folder '**cal1117**' in folder '**examples**'.  
 ![9](http://latex.codecogs.com/svg.latex?T^{cam}_{end}) is the transformation from the camera to the robotic arms end effector, which is the goal we want here.  
 ![7](http://latex.codecogs.com/svg.latex?T^{base}_{checker}) is the transformation from the robotic arms base to the checkerboard.
 
